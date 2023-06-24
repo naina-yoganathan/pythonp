@@ -1,13 +1,15 @@
 path = "/home/apple/Downloads/story.txt"
-folders = path.split("/")
+# folders = path.split("/")
+folders = path.rsplit("/", 1)
 
-filename = folders[len(folders)-1]
+filename = folders[-1]
 print( "filename = ", filename)
 
 extension = filename.split(".")[-1]
 print ( "extension name = ", extension)
 
-dir = "/".join(folders[:-1])
+# dir = "/".join(folders[:-1])
+dir = folders[0]
 print ( "directory name = ", dir)
 
 
