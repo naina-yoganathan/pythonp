@@ -6,9 +6,9 @@ while True:
     if n>1000:
         break
 
-    # if n in range(100,1000):
-    if 100 < n < 1000:
-        if ((n%2) == 0):
-            print(n)
+ 
+    if (n > 100) and (n%2 == 0):
+        print(n)
+        
     n1=n2
     n2=n
